@@ -167,7 +167,7 @@ a {
   content: "h";
 }
 
-#about > span > ul > li > div {
+#about > span > ul > li > a > div {
 font-size: 1.5em;
 display: inline;
 }
