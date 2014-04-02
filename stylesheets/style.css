@@ -218,3 +218,28 @@ a:hover {
   font-weight: bold;
   padding: 2em;
 }
+
+#resume:hover {
+  cursor: pointer;
+}
+
+#resume-div {
+  width: 75%;
+  position: inherit;
+  height: 100%;
+  top: 0;
+}
+
+#resume-div object {
+  width: 100%;
+  position: inherit;
+  height: 100%;
+}
+
+#resume-div > span {
+  float: right;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+

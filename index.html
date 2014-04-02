@@ -28,7 +28,7 @@
         <li><a href='#'><div class="icon-soundcloud"> </div></a></li>
         <li><a href='mailto:shawn.d.bro(at)gmail.com?Subject=Hey%20Shawn'><div class="icon-email-mail-streamline"> </div></a></li>
         <li><a href='https://medium.com/@s_d_br0_o'><div class="icon-social-medium"> </div></a></li>
-        <li><a href='#'><div class="icon-files"> </div></a></li>
+        <li><a id='resume'><div class="icon-files"> </div></a></li>
       </ul>
     </div>
   </div>
@@ -45,6 +45,13 @@
     })
     $('.project-name').mouseleave(function(e) {
       $('.project-specs').remove();
+    })
+
+    $('#resume').click(function() {
+      $("<div id='resume-div'><object data='images/resume.pdf'></object><span id='close-resume'>&times;</span></div>").appendTo($('#content'));
+      $("#close-resume").click(function() {
+      $('#resume-div').remove();
+    })
     })
   })
   </script>
