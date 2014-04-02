@@ -193,13 +193,13 @@ a:hover {
   border: 6px solid rgba(200, 50, 50, .3);
   width: 16em;
   height: 16em;
-  margin-left: 30%;
   position: relative;
   display: inline-block;
   top: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  left: 100%;
 }
 
 .project-name {
