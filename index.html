@@ -4,6 +4,7 @@
   <title>Shawn Broukhim</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"></style>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css"></style>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
   <div id='content'>
@@ -11,11 +12,12 @@
       <ul><li><span id='name'>Shawn David Broukhim</span></li></ul>
     </header>
     <div id='portrait'></div>
-      <div id='about'><span><h1>Hi.</h1>  I'm Shawn.</br></br>A Web Developer, Hacker/Tinkerer, & Composer (among other things).</br></br>  I'm looking for the opportunity to collaborate and solve <em>meaningful</em> problems.</br><h1>Projects:</h1>
-      <a href="https://github.com/shawnbro/quick_shark">Tangent</a></br>
-      <a href="https://github.com/shawnbro/old_news">Old News</a></br>
-      <a href="https://github.com/shawnbro/ColorPage">Color Page</a></br>
-      <a href="https://soundcloud.com/sdbro">Sounds</a></br>
+      <div id='about'><span><h1>Hi.</h1>  I'm Shawn.</br></br>A Web Developer, Hacker/Tinkerer, </br>& Composer (among other things).</br></br>  I'm looking for the opportunity to collaborate</br> and solve <em>meaningful</em> problems.</br>
+
+        <h1>Projects:</h1>
+      <a id="tangent" class='project-name' href="https://github.com/shawnbro/quick_shark">Tangent</a></br>
+      <a id="oldNews" class='project-name'href="https://github.com/shawnbro/old_news">Old News</a></br>
+      <a id="colorPage" class='project-name' href="https://github.com/shawnbro/ColorPage">Color Page</a></br>
       <h1>Contact:</h1>
       <ul class="icons">
         <li><a href='https://github.com/shawnbro'><div class="icon-social-github"></div></a></li>
@@ -23,14 +25,28 @@
         <li><a href='https://www.facebook.com/shawn.broukhim'><div class="icon-social-facebook"> </div></a></li>
         <li><a href='http://instagram.com/shawnbro'><div class="icon-fontawesome-webfont"> </div></a></li>
         <li><a href='https://linkedin.com/in/shawnbroukhim/'><div class="icon-social-linkedin"> </div></a></li>
-        <li><a href='mailto:shawn.d.bro@gmail.com?Subject=Hey%20Shawn"'><div class="icon-email-mail-streamline"> </div></a></li>
+        <li><a href='#'><div class="icon-soundcloud"> </div></a></li>
+        <li><a href='mailto:shawn.d.bro(at)gmail.com?Subject=Hey%20Shawn'><div class="icon-email-mail-streamline"> </div></a></li>
         <li><a href='https://medium.com/@s_d_br0_o'><div class="icon-social-medium"> </div></a></li>
         <li><a href='#'><div class="icon-files"> </div></a></li>
       </ul>
     </div>
   </div>
   <script type="text/javascript">
-
+  $( document ).ready(function() {
+    var projectDescriptions = {
+      colorPage: "A random div art generator.",
+      oldNews: "Newspaper headlines from today's date in a random year.",
+      tangent: "An interactive and exploratory learning app for visualizing word definitions."
+    }
+    $('.project-name').mouseenter(function(e) {
+      $("<div id='"+(e.target.id)+"' class='project-specs'><span>"+projectDescriptions[e.target.id]+"</span></div>").fadeIn(1500).appendTo(this)
+      $(".project-specs").css("background-image", 'url(images/'+e.target.id+'.png)');
+    })
+    $('.project-name').mouseleave(function(e) {
+      $('.project-specs').remove();
+    })
+  })
   </script>
 </body>
 </html>
