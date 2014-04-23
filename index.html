@@ -15,9 +15,10 @@
       <div id='about'><span><h1>Hi.</h1>  I'm Shawn.</br></br>A Web Developer, Hacker/Tinkerer, </br>& Composer (among other things).</br></br>  I'm looking for the opportunity to collaborate</br> and solve <em>meaningful</em> problems.</br>
 
         <h1>Projects:</h1>
-      <a id="tangent" class='project-name' href="https://github.com/shawnbro/quick_shark">Tangent</a></br>
-      <a id="oldNews" class='project-name'href="https://github.com/shawnbro/old_news">Old News</a></br>
-      <a id="colorPage" class='project-name' href="https://github.com/shawnbro/ColorPage">Color Page</a></br>
+      <a id="tangent" class='project-name' href="http://tangentapp.herokuapp.com">Tangent</a></br>
+      <a id="oldNews" class='project-name'href="http://oldnewsapp.herokuapp.com">Old News</a></br>
+      <a id="colorPage" class='project-name' href="http://colorpage.herokuapp.com">Color Page</a></br>
+      <a id="butterfly" class='project-name' href="http://butterfly-catcher.herokuapp.com">Butterfly Catcher</a></br>
       <h1>Contact:</h1>
       <ul class="icons">
         <li><a href='https://github.com/shawnbro'><div class="icon-social-github"></div></a></li>
@@ -37,7 +38,8 @@
     var projectDescriptions = {
       colorPage: "A random div art generator.",
       oldNews: "Newspaper headlines from today's date in a random year.",
-      tangent: "An interactive and exploratory learning app for visualizing word definitions."
+      tangent: "An interactive and exploratory learning app for visualizing word definitions.",
+      butterfly: "A fun game to catch and learn about butterflies."
     }
     $('.project-name').mouseenter(function(e) {
       $("<div id='"+(e.target.id)+"' class='project-specs'><span>"+projectDescriptions[e.target.id]+"</span></div>").fadeIn(1500).appendTo(this)
