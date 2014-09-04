@@ -1,0 +1,236 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+ background-color: #FFFFFD; 
+}
+
+header {
+  width: 100%;
+  height: 6.5em;
+  border-bottom: .09em solid #959992;
+  font-family: "Open Sans", 'sans serif', 'arial', 'helvetica';
+  font-weight: bold;
+  background-color: #FFFFFD;
+  cursor: default;
+}
+
+span {
+  display: inline-block;
+  padding: 40px;
+  text-align: left;
+  z-index: 14;
+  margin: 0;
+  font-weight: 100;
+  color: black;
+}
+
+div#content {
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  background-color: #FFFFFD;
+}
+
+ul {
+  border: 2px solid black;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0;
+}
+
+body > footer > ul > li > img {
+  position: relative;
+  width: 24px;
+}
+
+#portrait {
+  float: left;
+  margin: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+  background-image: url('../images/headshot_2.png');
+  width: 250px;
+  height: 250px;
+  background-position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border: .09em solid #959992;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border-radius: 100%;
+  opacity: 1;
+
+}
+
+#about {
+  font-family: 'open sans', 'sans serif', 'helvetica', 'arial';
+  width: 25%;
+  height: 50%;
+  border: 2px solid red;
+  display: inline;
+  border: none;
+}
+
+#about span {
+  border: none;
+}
+
+#projects {
+  border: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight:lighter;
+}
+
+/* Just click to select the code */
+ 
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("../fonts/untitled-font-1.eot");
+  src:url("../fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/untitled-font-1.woff") format("woff"),
+    url("../fonts/untitled-font-1.ttf") format("truetype"),
+    url("../fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-facebook:before {
+  content: "a";
+}
+.icon-social-twitter:before {
+  content: "b";
+}
+.icon-fontawesome-webfont:before {
+  content: "c";
+}
+.icon-social-linkedin:before {
+  content: "d";
+}
+.icon-social-github:before {
+  content: "e";
+}
+.icon-email-mail-streamline:before {
+  content: "f";
+}
+.icon-social-medium:before {
+  content: "g";
+}
+.icon-files:before {
+  content: "h";
+}
+.icon-soundcloud:before {
+  content: "i";
+}
+
+#about > span {
+  cursor: default;
+}
+#about > span > ul > li > a > div {
+  font-size: 1.5em;
+  display: inline;
+}
+
+#name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.project-specs {
+  border: 6px solid rgba(200, 50, 50, .3);
+  width: 16em;
+  height: 16em;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 100%;
+}
+
+.project-name {
+  display: inline;
+  position: absolute;
+}
+
+.icons li:hover {
+  font-size: .9em;
+}
+
+.project-specs span {
+  background-color: white;
+  position: relative;
+  top: -10em;
+  font-weight: bold;
+  padding: 2em;
+}
+
+#resume:hover {
+  cursor: pointer;
+}
+
+#resume-div {
+  width: 75%;
+  position: inherit;
+  height: 100%;
+  top: 0;
+}
+
+#resume-div object {
+  width: 100%;
+  position: inherit;
+  height: 100%;
+}
+
+#resume-div > span {
+  float: right;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
